@@ -1,4 +1,6 @@
-z=zip([1,2,3,4,5],[1,2,3,4,5])
+l1=[1]*5
+l2=[0]*5
 
-for i in z:
-	print(i)
+for i in range(5):
+	l1[i],l2[i]=l2[i],l1[i]
+print(l1,l2)
