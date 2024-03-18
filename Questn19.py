@@ -1,3 +1,5 @@
+#generate permutations of a string using branch and bound technique
+
 nums=[1,2,3,4]
 def perm(i,nums):
 
