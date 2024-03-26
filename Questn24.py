@@ -1,3 +1,4 @@
+# Powerset
 # Given an integer array nums of unique elements, return all possible
 # subsets
 #  (the power set).
@@ -38,3 +39,38 @@ def power(i,temp,arr):
 power(0,[],[1,2,3])
 print(res)
 
+
+#using bit manipulation
+
+#for calculating binary of decimal
+def decToBin(l,x):
+    if x==1:
+        l.append(1)
+        return 
+    decToBin(l,x//2)
+    l.append(x%2)
+l=[]
+decToBin(l,0)
+print(l)
+
+
+nums=[1,2,3]
+n=len(nums)
+for i in range(2**n):
+    break
+
+from typing import List
+
+# class Solution:
+#     def subsets(self, nums: List[int]) -> List[List[int]]:
+#         n = len(nums)
+#         res = []
+
+#         for i in range(2 ** n):  # Equivalent to pow(2, n)
+#             temp = []
+
+#             for j in range(n):
+#                 if i & (1 << j):  # Check if the jth bit is set
+#                     temp.append(nums[j])
+
+#             res.append(temp)
