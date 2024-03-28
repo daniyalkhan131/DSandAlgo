@@ -10,3 +10,6 @@ l=[[1],[1,2],[3],[2,3],[8]]
 
 if [2,3] in l:
 	print(True)
+
+for i in range(ord('a'),ord('z')+1):
+	print(chr(i))
