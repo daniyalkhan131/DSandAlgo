@@ -12,18 +12,16 @@ def binary_search(arr,l,h,target):
     
 #direct approach
 def binary_search_basic(arr,target):
-    l=0
-    h=len(nums)-1
+    l,h=0,len(nums)-1
     mid=(l+h)//2
     while l<=h:
         if arr[mid]==target:
             return mid
         elif arr[mid]<target:
             l=mid+1
-            mid=(l+h)//2
         else:
             h=mid-1
-            mid=(l+h)//2
+        mid=(l+h)//2
     return -1
 
 
