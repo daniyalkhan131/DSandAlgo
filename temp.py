@@ -60,3 +60,7 @@ l=[1,3,3,3,3,3,4,5,7,9,11,11,17,19,39,50]
 # print(l[7])
 
 print('find k',findk(l,5))
+
+d={1:11,2:22,3:44}
+for i in d.items():
+	print(i)
